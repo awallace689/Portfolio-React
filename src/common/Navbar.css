@@ -1,0 +1,10 @@
+.navbar {
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  /* position-y: 0; */
+
+  background-color: var(--dark-grey);
+  box-shadow: 0px 5px 5px black;
+  z-index: 99;
+}

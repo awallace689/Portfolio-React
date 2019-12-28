@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: stretch;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.rounded {
+  border-radius: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main-container {
+  background-color: var(--dark-grey);
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  z-index: 98;
+  padding: 25px;
+}
+
+.background-margin {
+  margin-top: 823px;
+}
+
+html {
+  --dark-grey: rgb(41, 41, 41);
+  --light-orange: #F5AE95;
+  --header-text-color: var(--light-orange);
+  --main-text-color: white;
+  --font: 'Lato';
+}
+
+body {
+  height: 100%;
+  min-height: 100%;
+  align-content: center;
+
+  background-color: black;
+  background-image: url('assets/1920x1080-3663390-kansas-city-wallpapers.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font: var(--font);
+
+
+  color: var(--main-text-color);
+}
+
+.center-column {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.p-header {
+  color: var(--light-orange);
+  margin: .2em;
+
+  /* background-color: var(--dark-grey); */
+  font: bold xx-large 'Lato', sans-serif; 
 }
