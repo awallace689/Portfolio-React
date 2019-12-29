@@ -6,10 +6,13 @@ import { Navbar } from './common/Navbar.js';
 function App() {
   return (
     <div className="app-container">
+      <nav>
+        <Navbar />
+      </nav>
       <div className="center-column background-margin">
-        <div className="main-container rounded">
+        <section className="main-container rounded">
           <Home />
-        </div>   
+        </section>   
       </div>
     </div>
   );

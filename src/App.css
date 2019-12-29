@@ -15,7 +15,6 @@
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  width: 100%;
   z-index: 98;
   padding: 25px;
 }
@@ -29,7 +28,7 @@ html {
   --light-orange: #F5AE95;
   --header-text-color: var(--light-orange);
   --main-text-color: white;
-  --font: 'Lato';
+  --font: 'source-sans-pro';
 }
 
 body {
@@ -38,8 +37,10 @@ body {
   align-content: center;
 
   background-color: black;
-  background-image: url('assets/1920x1080-3663390-kansas-city-wallpapers.jpg');
+  background-image: url('assets/2800x2100-3663390-kansas-city-wallpapers.jpg');
+  background-position: 50%;
   background-repeat: no-repeat;
+  background-size: cover;
   background-attachment: fixed;
   font: var(--font);
 
@@ -48,9 +49,11 @@ body {
 }
 
 .center-column {
-  width: 80%;
+  width: 65%;
   margin-left: auto;
   margin-right: auto;
+  min-width: 800px;
+  position: relative;
 }
 
 .p-header {
@@ -58,5 +61,6 @@ body {
   margin: .2em;
 
   /* background-color: var(--dark-grey); */
-  font: bold xx-large 'Lato', sans-serif; 
+  font: xx-large var(--font), sans-serif; 
+  font-weight: 600;
 }
